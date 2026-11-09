@@ -20,6 +20,13 @@
       "email": "parthv862@gmail.com",
       "passwordHash": "$2b$10$DZBGDfJIL3gQWkaJKAxZWOtuJSUQMvtNE58.H9aY6E.iYi5CF8g4O",
       "createdAt": 1794241273681
+    },
+    {
+      "id": "1df5fe3b-c3cb-4912-98f7-e0b4bff63b0e",
+      "name": "APK Test",
+      "email": "apk_test_1794241763843@test.com",
+      "passwordHash": "$2b$10$nf04JMMxTIkk6KZv6rX0PuCDyx38aVqKSFDhJUl.xa.t0LBDHjbwO",
+      "createdAt": 1794241765445
     }
   ],
   "notes": [
