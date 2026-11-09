@@ -13,6 +13,13 @@
       "email": "lucifer1107.ac@gmail.com",
       "passwordHash": "$2b$10$ZOuKhJQzdeNkSDnJar8Ti.IyvsCGE/lAwGbJUk8t9j2d70OKEMkb6",
       "createdAt": 1794231517702
+    },
+    {
+      "id": "84cdea45-f957-4c3f-83a8-3c6a11fb58b0",
+      "name": "Parth",
+      "email": "parthv862@gmail.com",
+      "passwordHash": "$2b$10$DZBGDfJIL3gQWkaJKAxZWOtuJSUQMvtNE58.H9aY6E.iYi5CF8g4O",
+      "createdAt": 1794241273681
     }
   ],
   "notes": [
