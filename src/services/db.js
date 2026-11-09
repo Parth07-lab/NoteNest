@@ -9,18 +9,23 @@ const DEFAULT_DATA = { users: [], notes: [] };
 let writeQueue = Promise.resolve();
 
 /**
- * Ensures the data/ directory and db.json exist for local file mode.
+ * Guarantees that the data directory and db.json exist (both locally and in /tmp on Vercel).
  */
+function ensureLocalDb() {
+  try {
+    if (!fs.existsSync(config.DATA_DIR)) {
+      fs.mkdirSync(config.DATA_DIR, { recursive: true });
+    }
+    if (!fs.existsSync(config.DB_PATH)) {
+      fs.writeFileSync(config.DB_PATH, JSON.stringify(DEFAULT_DATA, null, 2), 'utf-8');
+    }
+  } catch (err) {
+    console.error('[DB Local Init Warning]:', err.message);
+  }
+}
+
 function initDb() {
-  if (config.USE_GITHUB_DB) return;
-
-  if (!fs.existsSync(config.DATA_DIR)) {
-    fs.mkdirSync(config.DATA_DIR, { recursive: true });
-  }
-
-  if (!fs.existsSync(config.DB_PATH)) {
-    fs.writeFileSync(config.DB_PATH, JSON.stringify(DEFAULT_DATA, null, 2), 'utf-8');
-  }
+  ensureLocalDb();
 }
 
 /**
@@ -102,11 +107,11 @@ async function readDbInternal() {
       const { data } = await readFromGitHub();
       return data;
     } catch (err) {
-      console.error('[GitHub Cloud DB Read Error, falling back to local]:', err.message);
+      console.error('[GitHub Cloud DB Read Error, falling back to local/tmp]:', err.message);
     }
   }
 
-  initDb();
+  ensureLocalDb();
   try {
     const raw = await fs.promises.readFile(config.DB_PATH, 'utf-8');
     const parsed = JSON.parse(raw);
@@ -143,11 +148,11 @@ async function writeDbInternal(data) {
       await writeToGitHub(data);
       return;
     } catch (err) {
-      console.error('[GitHub Cloud DB Write Error, falling back to local]:', err.message);
+      console.error('[GitHub Cloud DB Write Error, falling back to local/tmp]:', err.message);
     }
   }
 
-  initDb();
+  ensureLocalDb();
   const tempPath = path.join(config.DATA_DIR, `db.tmp-${Date.now()}-${Math.random().toString(36).slice(2)}.json`);
   const jsonString = JSON.stringify(data, null, 2);
 
