@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "d1ddbbaa-d953-4a42-a702-ecdc2ec59c21",
+      "name": "ptu",
+      "email": "ptu@gmail.com",
+      "passwordHash": "$2b$10$YI39.2FVZXzwsIZpr3hhm.Zu/E5a0/VeUmThRkZJi848mV7pjNLVi",
+      "createdAt": 1794218999081
+    }
+  ],
+  "notes": [
+    {
+      "id": "5090b2f2-8366-4aed-9ef2-e0e8069ce4c5",
+      "userId": "d1ddbbaa-d953-4a42-a702-ecdc2ec59c21",
+      "title": "ptu",
+      "body": "exam postponed.",
+      "cat": "Study",
+      "color": "sky",
+      "pinned": true,
+      "status": "active",
+      "created": 1794219044792,
+      "updated": 1794219371669
+    }
+  ]
+}
