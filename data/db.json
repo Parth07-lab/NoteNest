@@ -34,6 +34,13 @@
       "email": "vermaparth688@gamil.com",
       "passwordHash": "$2b$10$5G7R0a9jjzP5YK7WwKRZjOBHUun5CLt5EOccIa6TppD2AD5dlD4fq",
       "createdAt": 1794242417601
+    },
+    {
+      "id": "84e56e4a-c747-46a4-ac97-20f7b698e186",
+      "name": "SUJAL",
+      "email": "sujjalbali@gmail.com",
+      "passwordHash": "$2b$10$X4g9INglgW8AncW86D74CegdlhdvC8z/QtVqY560cX2AxqAZqdgxi",
+      "createdAt": 1794242617619
     }
   ],
   "notes": [
