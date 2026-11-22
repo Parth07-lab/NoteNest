@@ -48,6 +48,13 @@
       "email": "arhaanchopra10@gmail.com",
       "passwordHash": "$2b$10$rUyaKBZ7/nDP0yxG8ou2quqHeFMUJnFACP3RrYQF3Vz.SoCYUx2q.",
       "createdAt": 1795349906719
+    },
+    {
+      "id": "eac59e96-3474-4373-af49-a54fc3cf10dc",
+      "name": "Parth",
+      "email": "123@gmail.com",
+      "passwordHash": "$2b$10$BLSdsXrP4azVu76rB/WcPuBFlwjffyc1O4Tk0QbXQ4CB0GRP/19Yu",
+      "createdAt": 1795350002733
     }
   ],
   "notes": [
