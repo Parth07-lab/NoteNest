@@ -41,6 +41,13 @@
       "email": "sujjalbali@gmail.com",
       "passwordHash": "$2b$10$X4g9INglgW8AncW86D74CegdlhdvC8z/QtVqY560cX2AxqAZqdgxi",
       "createdAt": 1794242617619
+    },
+    {
+      "id": "0ab43632-280f-4d9f-b9b0-7ac841696c5b",
+      "name": "priya",
+      "email": "arhaanchopra10@gmail.com",
+      "passwordHash": "$2b$10$rUyaKBZ7/nDP0yxG8ou2quqHeFMUJnFACP3RrYQF3Vz.SoCYUx2q.",
+      "createdAt": 1795349906719
     }
   ],
   "notes": [
