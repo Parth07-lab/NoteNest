@@ -62,6 +62,13 @@
       "email": "vermapath688@gmail.com",
       "passwordHash": "$2b$10$kpOhzUOwkD8YU6wu5BUKf.LILWE20FUwtAWgalZt5y9uN534W6dXa",
       "createdAt": 1795405829327
+    },
+    {
+      "id": "887a1c55-4cc6-4eef-b165-170e80962e94",
+      "name": "RAJAN KUMAR",
+      "email": "vermaparth688@gmail.com",
+      "passwordHash": "$2b$10$fWtKkqJ.FVh9QzW.LQ2PEeCCsnngaRWDdYEg5qWZTbV8ZFagSFk2y",
+      "createdAt": 1795406468081
     }
   ],
   "notes": [
