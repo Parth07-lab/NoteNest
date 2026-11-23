@@ -55,6 +55,13 @@
       "email": "123@gmail.com",
       "passwordHash": "$2b$10$BLSdsXrP4azVu76rB/WcPuBFlwjffyc1O4Tk0QbXQ4CB0GRP/19Yu",
       "createdAt": 1795350002733
+    },
+    {
+      "id": "3f844e22-d9b2-4c3a-9273-e14092e6dabf",
+      "name": "Parth Vema",
+      "email": "vermapath688@gmail.com",
+      "passwordHash": "$2b$10$kpOhzUOwkD8YU6wu5BUKf.LILWE20FUwtAWgalZt5y9uN534W6dXa",
+      "createdAt": 1795405829327
     }
   ],
   "notes": [
